@@ -18,6 +18,4 @@ df['Bad review, %'] = df['BadReview']/df['Number Of Transactions']*100
 df = df.drop(columns=['Count', 'Cost', 'Delivery', 'Paid', 'Weight', 'AutoIssue'])
 daf = pd.DataFrame(df, columns= ['Number Of Transactions', 'Bad review, %', 'Profitability, %'])
 
-daf.to_excel("output.xlsx", sheet_name='я устала')
-
-print(daf)
+daf.to_excel("output.xlsx", sheet_name='results')
